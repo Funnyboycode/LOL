@@ -1,5 +1,6 @@
 <template>
-  <div class="login">
+  <div>
+    <div class="bg"></div>
     <dialog class="dialog" :open="true">
       <div class="close">
         <a class="close-img" @click="closeLogin" title="关闭"></a>
@@ -64,9 +65,9 @@
 
 <script>
 const Base64 = require('js-base64').Base64
-// import axios from 'axios'
 export default {
-  name: 'HomeLogin',
+  name: 'HeadLogin',
+  inject: ['reload'],
   data () {
     return {
       userName: '',
@@ -90,7 +91,7 @@ export default {
   methods: {
     //  关闭登录窗口
     closeLogin () {
-      this.$emit('close')
+      this.reload()
     },
     // 点击记住密码
     doRememberPwd (e) {
@@ -98,7 +99,7 @@ export default {
     },
     // 点击登录按钮业务逻辑
     doLogin (e) {
-      console.log(this.rememberPwd)
+      // console.log(this.rememberPwd)
       var userName = this.userName
       var password = this.password
       if (userName === '') {
@@ -116,28 +117,12 @@ export default {
           this.showError = false
         }, 3000)
       }
-      // 点击登陆向后台提交登陆信息
-      // axios.post(URL, {
-      //   userName,
-      //   password
-      // })
-      // .then(function (response) {
-      //  // 储存token（需要封装拦截器，将token放入请求头中）
-      //   this.setCookie('token',res.token)
-      //  // 跳转到首页
-      //   this.$router.push('/Index')
-      //  // 储存登录信息
-      //   this.setUserInfo()
-      // })
-      // .catch(function (error) {
-      //   console.log(error);
-      // });
       // 关闭登录窗口
       this.closeLogin()
       // 储存登录信息
       this.setUserInfo()
       this.$store.commit('doLogined', userName)
-      this.$store.commit('haveLogined', true)
+      this.$store.commit('haveLogined', 'yes')
     },
     //  储存登录信息
     setUserInfo () {
@@ -149,7 +134,7 @@ export default {
         let password = Base64.encode(this.password)
         this.setCookie('password', password)
       } else {
-        console.log('不记住账号密码')
+        // console.log('不记住账号密码')
         this.setCookie('userName', '')
         this.setCookie('password', '')
       }
@@ -174,14 +159,22 @@ export default {
       document.cookie = cName + '=' + decodeURIComponent(value) +
       ((expiredays == null) ? '' : ';expires=' + exdate.toGMTString())
     }
-  },
-  mounted () {
-    // this.loadAccountInfo
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+  .bg
+    background-color: rgb(230, 245, 255);
+    border-top: 1px solid rgb(230, 245, 255);
+    position: fixed;
+    height: 1197px;
+    width:  100%;
+    z-index: 100001;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+    display: block;
   .dialog
     height: 368px;
     width: 622px;

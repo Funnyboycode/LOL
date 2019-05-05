@@ -1,5 +1,8 @@
 <template>
-  <div class="headnav">
+  <div
+    class="headnav"
+    :style="{position: this.headstyle.position, background: this.headstyle.background}"
+  >
       <a href="/" class="lol-img" title="英雄联盟官网">
         <img src="https://ossweb-img.qq.com/images/lol/v3/logo.png" alt="">
       </a>
@@ -33,33 +36,42 @@
           <p class="logined">{{this.$store.state.userName}}<a @click="logout">[注销]</a></p>
         </div>
       </div>
+      <head-login v-show="showLoginWindow"></head-login>
   </div>
 </template>
 
 <script>
+import HeadLogin from './HeadLogin'
 export default {
   name: 'HeadNav',
-  // data () {
-  //   return {
-  //     logined: false
-  //   }
-  // },
-  // bcreate () {
-  //   // console.log(this.logined)
-  //   this.logined = this.$store.state.isLogined
-  //   console.log(this.$store.state.isLogined)
-  // },
+  props: {
+    headstyle: Object
+  },
+  components: {
+    HeadLogin
+  },
+  data () {
+    return {
+      showLoginWindow: false
+    }
+  },
   computed: {
     isLogined () {
-      return this.$store.state.isLogined
+      let yesOrNo = this.$store.state.isLogined
+      if (yesOrNo === 'yes') {
+        return true
+      } else {
+        return false
+      }
     }
   },
   methods: {
     login () {
-      this.$emit('change')
+      this.showLoginWindow = true
     },
     logout () {
-      this.$store.commit('haveLogined', false)
+      this.$store.commit('haveLogined', 'no')
+      this.showLoginWindow = false
     }
   }
 }
@@ -67,12 +79,12 @@ export default {
 
 <style lang="stylus" scoped>
   .headnav
-    position: relative;
+    overflow: visible;
     width: 100%;
     max-width: 1358px;
     min-width: 1240px;
     height: 78px;
-    background: #000;
+    z-index: 11
     .lol-img
       float: left;
       width: 132px;

@@ -1,0 +1,103 @@
+{
+  "ret": true,
+  "data": {
+    "heroLists": [ {
+      "id": "Aatrox",
+      "nickname": "暗裔剑魔",
+      "name": "亚托克斯",
+      "belong": "fighter assassin",
+      "form":["战士","刺客"],
+      "heroState":{"物理攻击":"80%","魔法攻击":"20%","防御能力":"40%","上手难度":"50%"},
+      "bigImgUrl":["https://ossweb-img.qq.com/images/lol/web201310/skin/big266000.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big266001.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big266002.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big266003.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big266007.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big266008.jpg"],
+      "smallImgUrl":["https://ossweb-img.qq.com/images/lol/web201310/skin/small266000.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small266001.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small266002.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small266003.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small266007.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small266008.jpg"],
+      "skinName":["默认皮肤","仲裁圣骑 亚托克斯","霸天剑魔 亚托克斯","狂鲨 亚托克斯","腥红之月 亚托克斯","腥红之月 亚托克斯 至臻"],
+      "skinPrice":[0, 66, 88, 45, 99, 199],
+      "imgUrl": "https://ossweb-img.qq.com/images/lol/img/champion/Aatrox.png",
+      "bgStory":"亚托克斯和他的同胞们曾是恕瑞玛对抗虚空之地时满载荣耀的守护者一族，最终却变成了符文之地的一个更大的威胁，并且仅被击败于被诡诈的致命巫术。但在被囚禁了数个世纪后，亚托克斯率先找到重获自由之法，那就是对那些蠢得妄图尝试挥舞那把含有他灵魂精华的神奇武器的愚妄之徒进行腐蚀和转化。现在，凭借偷来的血肉躯体，他以一种近似他之前形态的凶残外表行走于符文之地中，寻求着一次毁天灭地且久未兑现的复仇。"
+    }, {
+      "id": "Ahri",
+      "nickname": "九尾妖狐",
+      "name": "阿狸",
+      "belong": "mage assassin",
+      "form":["法师","刺客"],
+      "heroState":{"物理攻击":"20%","魔法攻击":"70%","防御能力":"30%","上手难度":"40%"},
+      "bigImgUrl":["https://ossweb-img.qq.com/images/lol/web201310/skin/big103000.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103001.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103002.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103003.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103004.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103005.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103006.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103007.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103014.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103015.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/big103016.jpg"],
+      "smallImgUrl":["https://ossweb-img.qq.com/images/lol/web201310/skin/small103000.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103001.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103002.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103003.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103004.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103005.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103006.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103007.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103014.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103015.jpg",
+        "https://ossweb-img.qq.com/images/lol/web201310/skin/small103016.jpg"],
+      "skinName":["默认皮肤","高丽风情 阿狸","暗影妖狐 阿狸","焰尾妖狐 阿狸","偶像歌手 阿狸","勇者 阿狸","风纪委员 阿狸","电玩女神 阿狸","星之守护者 阿狸","K/DA 阿狸","K/DA 阿狸 至臻"],
+      "skinPrice":[0, 22, 44, 56, 65, 88, 79, 88, 99, 169, 199],
+      "imgUrl": "https://ossweb-img.qq.com/images/lol/img/champion/Ahri.png",
+      "bgStory":"符文之地的潜在力量和她有着与生俱来的共鸣。原始的魔法在她手中凝为魔法宝珠。瓦斯塔亚人阿狸醉心于玩弄猎物的情感，然后吞噬他们的生命精魄。虽然阿狸是天生的掠食者，但她却对猎物始终保存着一份同情，因为每一个被吞噬的灵魂，都伴随着他们生前的记忆。"
+    }, {
+      "id": "Alistar",
+      "nickname": "牛头酋长",
+      "name": "阿利斯塔",
+      "belong": "tank support fighter",
+      "imgUrl": "https://ossweb-img.qq.com/images/lol/img/champion/Alistar.png"
+    }, {
+      "id": "Ashe",
+      "nickname": "寒冰射手",
+      "name": "艾希",
+      "belong": "marksman",
+      "imgUrl": "https://ossweb-img.qq.com/images/lol/img/champion/Ashe.png"
+    }],
+    "selectItems": [ {
+      "id": "001",
+      "name": "all",
+      "description": "所有英雄"
+    }, {
+      "id": "002",
+      "name": "fighter",
+      "description": "战士"
+    }, {
+      "id": "003",
+      "name": "mage",
+      "description": "法师"
+    }, {
+      "id": "004",
+      "name": "assassin",
+      "description": "刺客"
+    }, {
+      "id": "005",
+      "name": "tank",
+      "description": "坦克"
+    }, {
+      "id": "006",
+      "name": "marksman",
+      "description": "射手"
+    }, {
+      "id": "007",
+      "name": "support",
+      "description": "辅助"
+    }]
+  }
+}
