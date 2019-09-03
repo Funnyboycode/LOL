@@ -14,7 +14,8 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/Information">
+          <!-- <router-link to="/Information"> -->
+          <router-link to="/#">
             <span class="head-nav-title">官方资讯</span>
             <span class="head-nav-subtitle">OFFICIAL INFO</span>
           </router-link>
@@ -81,7 +82,8 @@ export default {
   .headnav
     overflow: visible;
     width: 100%;
-    max-width: 1358px;
+    // max-width: 1358px;
+    // background-color: rgba(0,0,0,.7) !important;
     min-width: 1240px;
     height: 78px;
     z-index: 11

@@ -23,7 +23,7 @@ export default {
     return {
       headstyle: {
         position: 'absolute',
-        background: 'none'
+        background: 'rgba(0,0,0,.7)'
       },
       heroLists: [],
       selectItems: []
